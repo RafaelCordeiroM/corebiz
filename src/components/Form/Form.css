@@ -1,0 +1,112 @@
+#section-form {
+    width: 100%;
+    padding: 24px;
+    background: #F2F2F2;
+}
+
+#section-form .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#section-form .col-title {
+    width: 100%;
+    text-align: center;
+}
+
+#section-form .col-title span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #333333;
+}
+
+#section-form form {
+    width: 100%;
+}
+
+#section-form .row-form {
+    width: 100%;
+    margin-top: 16px;
+}
+
+#section-form .row-form .col-input {
+    width: 40%;
+}
+
+#section-form .row-form .col-btn {
+    width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    #section-form .row-form .col-input,
+    #section-form .row-form .col-btn {
+        width: 100%;
+        margin-top: 16px;
+    }
+}
+
+#section-form .col-input input {
+    display: block;
+    max-width: 270px;
+    height: 50px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: none;
+    padding-left: 16px;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+#section-form .col-input input:focus {
+    box-shadow: none;
+    border: none;
+    border: 1px solid #BDBDBD;
+}
+
+#section-form .col-input input::placeholder {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #585858;
+    padding-left: 16px;
+}
+
+#section-form .col-btn button {
+    background: #000000;
+    border-radius: 5px;
+    border: none;
+    padding: 19px 25px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#section-form .col-btn button {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+    #section-form {
+        padding: 10px;
+    }
+    #section-form .col-input input {
+        max-width: 300px;
+    }
+    #section-form .col-btn button {
+        max-width: 300px;
+        width: 100%;
+    }
+}

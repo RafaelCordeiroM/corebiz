@@ -1,0 +1,201 @@
+.App-header {
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.App-header .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.App-header .container .row {
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.App-header .col-logo {
+    display: grid;
+    align-items: center;
+}
+
+.App-header .col-logo img {
+    width: 170px;
+    height: 40px;
+}
+
+.App-header .col-account {}
+
+
+/* SEARCH BAR */
+
+.App-header .col-search-bar {
+    position: relative;
+    max-width: 720px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.App-header .col-search-bar.mobile {
+    width: 100% !important;
+    max-width: 800px;
+    margin-top: 14px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .App-header .col-search-bar {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .App-header .col-search-bar {
+        max-width: 400px;
+    }
+    .App-header .col-logo img {
+        width: 130px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .App-header .col-search-bar {
+        max-width: 300px;
+    }
+    .App-header .col-logo img {
+        width: 100px;
+        height: 25px;
+    }
+}
+
+.App-header .col-search-bar input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #7A7A7A;
+    max-width: 720px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.App-header .col-search-bar input::placeholder {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7A7A7A;
+}
+
+.App-header .col-search-bar .form-input {
+    position: relative;
+}
+
+.App-header .col-search-bar .form-input .icon svg {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
+/* Account */
+
+.App-header .col-account {
+    display: grid;
+    align-items: center;
+}
+
+
+/* @media screen and (max-width: 1000px) {
+    .App-header .col-account {
+        display: none;
+    }
+} */
+
+.App-header .col-account .content-account {
+    display: flex;
+    cursor: pointer;
+}
+
+.App-header .col-account .icon {
+    margin-right: 7px;
+}
+
+.App-header .col-account .text {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7A7A7A;
+}
+
+
+/* SEARCH BAR */
+
+.App-header .col-cart {
+    display: grid;
+    align-items: center;
+}
+
+.App-header .col-cart .content-cart {
+    display: flex;
+    cursor: pointer;
+}
+
+.App-header .col-cart .content-cart .icon {
+    margin-right: 6px;
+}
+
+.App-header .col-cart .content-cart .qtd {
+    width: 15px;
+    height: 15px;
+    background: #F8475F;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.App-header .col-cart .content-cart .qtd span {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.App-header .col-dropdown.mobile svg {
+    cursor: pointer;
+}
+
+
+/* MOBILE CHANGES */
+
+.App-header .mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .App-header .col-dropdown.mobile {
+        display: grid;
+        align-content: end;
+    }
+    .App-header .mobile {
+        display: block;
+    }
+    .App-header .desk {
+        display: none;
+    }
+}

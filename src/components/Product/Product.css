@@ -1,0 +1,154 @@
+.product {
+    width: 216px;
+    height: 353px;
+}
+
+.product .top {
+    position: relative;
+    width: 216px;
+    height: 200px;
+}
+
+.product .top img {
+    width: 216px;
+    height: 200px;
+}
+
+.product .top .off {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product .top .off::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 80px 72px 0;
+    border-color: transparent #F8475F transparent transparent;
+}
+
+.product .top .off span {
+    position: relative;
+    top: 14px;
+    right: 9px;
+    z-index: 2;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+
+/* middle */
+
+.product .middle .name {
+    margin-top: 7px;
+}
+
+.product .middle .name {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+.product .middle .stars {
+    text-align: center;
+}
+
+.product .middle .prices {
+    position: relative;
+    margin-top: 5px;
+    height: 40px
+}
+
+.product .middle .sub-price {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+.product .middle .price {
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.product .middle .price {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}
+
+.product .middle .installments {
+    height: 14px;
+}
+
+.product .middle .installments {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+
+/* BOTTOM */
+
+.product .bottom {
+    width: 100%;
+    padding-top: 8px;
+}
+
+.product .bottom button {
+    display: none;
+    width: 125px;
+    height: 32px;
+    background: #000000;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: none;
+}
+
+.product .bottom button {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.product:hover,
+.product:hover .middle,
+.product:hover .bottom {
+    background: #E6E8EA;
+}
+
+.product:hover .bottom button {
+    display: block;
+}
